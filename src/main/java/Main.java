@@ -5,6 +5,8 @@ import com.workintech.pool.Cuboid;
 
 public class Main {
     public static void main(String[] args) {
+
+        // --- Silindir için (INPUT) ---
         Circle circle = new Circle(3.75);
         System.out.println("circle.radius= " + circle.getRadius());
         System.out.println("circle.area= " + circle.getArea());
@@ -15,6 +17,7 @@ public class Main {
         System.out.println("cylinder.area= " + cylinder.getArea());
         System.out.println("cylinder.volume= " + cylinder.getVolume());
 
+        // --- Havuzun Alanı için (INPUT) ---
         Rectangle rectangle = new Rectangle(5, 10);
         System.out.println("rectangle.width= " + rectangle.getWidth());
         System.out.println("rectangle.length= " + rectangle.getLength());

@@ -1,11 +1,15 @@
 package com.workintech.cylinder;
 
 public class Cylinder extends Circle {
-    private double height;
+    private double height; // tipi double olmalı
 
     public Cylinder(double radius, double height) {
         super(radius);
-        this.height = Math.max(0, height);
+        if (height < 0) {
+            this.height = 0;
+        } else {
+            this.height = height;
+        }
     }
 
     public double getHeight() {
